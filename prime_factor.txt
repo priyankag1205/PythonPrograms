@@ -1,0 +1,12 @@
+﻿def prime_factorization(num):
+	while(num%2==0):
+		print('2')
+		num = num/2
+		
+	for i in range(3,num+1):
+		while(num%i==0):
+			print(i)
+			num = num/i
+			
+number = int(input('Enter the number:'))
+prime_factorization(number)
